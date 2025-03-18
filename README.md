@@ -24,5 +24,51 @@ The table below summarizes the data sources and statistics for AlignX, involving
 | **#Examples** | 1,224,151 | 10,714 | 11,629 / 16,809 / 36,169 / 7,219 | 2,255 / 144 / 26 / 33 / 636 |
 
 
-# Data Composition
+# Dataset Overview
 
+<img src="figures/dataset_overview.png" width="1200px">
+
+# Dataset Format
+
+```jsonc
+{
+    "prompt": "", // the post eliciting responses
+    "chosen": "", // the user-preferred response
+    "rejected": "", // the less preferred response relative to "chosen"
+    "Preference Direction": [0/0.5/1] * 90, // a 90-element list: 1 = "Positive" (higher levels preferred), 0 = "Negative" (lower levels preferred), 0.5 = "Neutral" (no clear preference)
+    "Demographic Information": "", // a comprehensive natural language description of the user
+    "User-Generated Content": [ // comments written by the same user on other posts
+        { // UGC 1
+            "prompt": "",
+            "comment": "",
+            "Preference Direction": [0/0.5/1] * 90
+        },
+        { // UGC 2
+            ...
+        },
+        { // UGC 3
+            ...
+        },
+        { // UGC 4
+            ...
+        }
+    ],
+    "Pair-wise Comparative Feedback": [ // the preference pairs of the same user for comments under other posts
+        { // PAIR 1
+            "prompt": "",
+            "chosen": "",
+            "rejected": "",
+            "Preference Direction": [0/0.5/1] * 90
+        },
+        { // PAIR 2
+            ...
+        },
+        { // PAIR 3
+            ...
+        },
+        { // PAIR 4
+            ...
+        }
+    ]
+}
+```
