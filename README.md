@@ -77,7 +77,7 @@ The table below summarizes the data sources and statistics for AlignX, involving
 
 We implement In-Context Alignment (ICA) and Preference-Bridged Alignment (PBA) based on Llama-3.1-8B-Instruct. We train the model using the 7% subset (91,918 samples) and the full dataset (1,311,622 samples), respectively. The experimental results are shown in the table below, where our model significantly outperforms the baselines.
 
-<img src="figures/results.png" width="1200px">
+<img src="figures/performance.png" width="1200px">
 
 # Evaluation
 
