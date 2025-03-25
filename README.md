@@ -13,6 +13,10 @@
 - 🤗 [AlignXpert<sub>ICA</sub> (Training with the Full Dataset)](https://huggingface.co/JinaLeejnl/AlignXpert-ICA-Full)
 - 🤗 [AlignXpert<sub>PBA</sub> (Training with the Full Dataset)](https://huggingface.co/JinaLeejnl/AlignXpert-PBA-Full)
 
+# News
+
+- [2025/03/24]: We have published a survey that presents the first comprehensive review of personalized alignment—a paradigm that enables LLMs to adapt their behavior within ethical boundaries based on individual preferences. For more details, see [A Survey on Personalized Alignment -- The Missing Piece for Large Language Models in Real-World Applications](https://arxiv.org/abs/2503.17003).
+
 
 # Dataset Statistics
 
