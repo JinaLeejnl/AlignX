@@ -5,7 +5,7 @@
 
 # Links
 
-- 📜 [Paper]()
+- 📜 [Paper](https://arxiv.org/abs/2503.15463)
 - 🤗 [AlignX](https://huggingface.co/datasets/JinaLeejnl/AlignX)
 - 🤗 [AlignX<sub>test</sub>](https://huggingface.co/datasets/JinaLeejnl/AlignX-test)
 - 🤗 [AlignXpert<sub>ICA</sub> (Training with a 7% Subset)](https://huggingface.co/JinaLeejnl/AlignXpert-ICA-Subset)
