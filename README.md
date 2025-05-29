@@ -83,6 +83,29 @@ We implement In-Context Alignment (ICA) and Preference-Bridged Alignment (PBA) b
 
 <img src="figures/performance.png" width="1200px">
 
+## Training
+
+Construct training data:
+
+```train
+cd train
+python format_data.py
+```
+
+### In-context alignment (ICA)
+
+```train
+cd train/OpenRLHF/examples/scripts
+./ica_dpo.sh
+```
+
+### Preference-bridged alignment (PBA)
+
+```train
+cd train/OpenRLHF/examples/scripts
+./pba_dpo.sh
+```
+
 # Evaluation
 
 ### Alignment Accuracy
