@@ -85,6 +85,8 @@ We implement In-Context Alignment (ICA) and Preference-Bridged Alignment (PBA) b
 
 ## Training
 
+The code is developed based on [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF).
+
 Construct training data:
 
 ```train
