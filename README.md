@@ -17,6 +17,8 @@ AlignX releases the <strong>LARGEST</strong> open dataset for personalization re
 
 # :open_book: Dataset Overview
 
+AlignX comprises a post with two responses and three types of personas that capture both behavioral patterns ($P_{UGC}$ and $P_{PAIR}$) and descriptive features ($P_{DEMO}$), enabling precise preference inference and facilitating preference learning. Notably, LLMs aligned to universal values (e.g., GPT-4o) favor Response 2, in contrast to the user's personalized preference for Response 1.
+
 <img src="figures/dataset_overview.png" width="1200px">
 
 # :card_index_dividers: Data Format
@@ -72,6 +74,29 @@ The table below summarizes the data sources and statistics for AlignX, involving
 |------------|------------|------------------|-------------------|----------------|
 | **Dimension** | The 90 self-defined preference dimensions | Safety | Helpfulness / Honesty / Instruction-Following / Truthfulness | Helpfulness / Correctness / Coherence / Complexity / Verbosity |
 | **#Examples** | 1,225,988 | 10,714 | 11,629 / 16,809 / 36,169 / 7,219 | 2,255 / 144 / 26 / 33 / 636 |
+
+# Preference Space
+
+Our dataset is grounded in a 90-dimensional preference space designed to model diverse user preferences. This space synthesizes foundational psychological theories (Big Five, Maslow’s Hierarchy, Murray’s System of Needs), cutting-edge research in recommendation systems and LLM alignment, and real-world interest taxonomies distilled from major social platforms (X, Facebook, Zhihu, RedNote). This multi-source approach ensures the model can handle both abstract personality-driven preferences and specific topic-based interests.
+
+<p align="center">
+  <img src="figures/AlignX_Taxonomy.png" width="80%" alt="AlignX taxonomy"/>
+</p>
+<p align="center">
+  <em>Figure: The 90-dimensional taxonomy used to construct the preference space in AlignX.</em>
+</p>
+
+We validated the quality of our 90-dimensional schema by analyzing pairwise correlations. The resulting heatmap reveals a distinct lack of strong correlations between dimensions, validating our multi-source construction approach.
+
+* **Distinct Features:** The low correlation indicates that dimensions derived from psychology, social media, and research metrics address unique user needs.
+* **Broad Coverage:** By avoiding redundant overlapping concepts, our dataset covers a wider spectrum of the preference manifold.
+
+<p align="center">
+  <img src="figures/correlation.png" width="80%" alt="correlation"/>
+</p>
+<p align="center">
+  <em>Figure: Pearson correlation matrix of the 90 dimensions. The prevalence of low correlation values confirms the diversity and non-redundancy of the constructed preference space.</em>
+</p>
 
 # :gear: Alignment Methods - AlignXpert
 
